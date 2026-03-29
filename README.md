@@ -110,6 +110,8 @@ preserves full provenance of the raw data.
 
 ## Metadata
 
+<img src= "/nfl_4table_er_diagram.html" alt="ER Diagram">
+
 **Data Dictionary** -
 | Name | Data Type | Description | Example |
 |------|-----------|-------------|---------|
