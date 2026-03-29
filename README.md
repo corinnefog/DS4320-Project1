@@ -133,7 +133,7 @@ preserves full provenance of the raw data.
 | home_moneyline | varies | varies | Market snapshot; same timing uncertainty as spread_line |
 
 
-##Press Release
+## Press Release
 
 <a name="press-release"></a>
 
