@@ -6,7 +6,7 @@ NetID: qfr4cu
 
 DOI:
 
-Press Release:
+[Press Release](/Press-Release.md)
 
 Data:
 
