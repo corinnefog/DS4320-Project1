@@ -1,0 +1,95 @@
+
+<div id="erd" style="padding: 1rem 0"></div>
+<script type="module">
+import mermaid from 'https://esm.sh/mermaid@11/dist/mermaid.esm.min.mjs';
+const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+await document.fonts.ready;
+mermaid.initialize({
+  startOnLoad: false,
+  theme: 'base',
+  fontFamily: '"Anthropic Sans", sans-serif',
+  themeVariables: {
+    darkMode: dark,
+    fontSize: '13px',
+    fontFamily: '"Anthropic Sans", sans-serif',
+    lineColor: dark ? '#9c9a92' : '#73726c',
+    textColor: dark ? '#c2c0b6' : '#3d3d3a',
+  },
+});
+const { svg } = await mermaid.render('erd-svg', `erDiagram
+  GAMES ||--o{ QUARTERBACKS : has
+  GAMES }o--|| TEAMS : away_team
+  GAMES }o--|| TEAMS : home_team
+  GAMES }o--|| STADIUMS : played_at
+
+  GAMES {
+    string game_id PK
+    int season
+    string game_type
+    int week
+    string gameday
+    string away_team FK
+    string home_team FK
+    int away_score
+    int home_score
+    int result
+    int overtime
+    int away_rest
+    int home_rest
+    int away_moneyline
+    int home_moneyline
+    float spread_line
+    float total_line
+    int div_game
+    string stadium FK
+    string away_qb_id FK
+    string home_qb_id FK
+  }
+
+  TEAMS {
+    string team_id PK
+    string conference
+    string division
+  }
+
+  STADIUMS {
+    string stadium PK
+    string roof
+    string surface
+    string home_team
+    float avg_temp
+    float avg_wind
+  }
+
+  QUARTERBACKS {
+    string game_id FK
+    string qb_id PK
+    string qb_name
+    string team_id
+    string role
+  }
+`);
+document.getElementById('erd').innerHTML = svg;
+document.querySelectorAll('#erd svg.erDiagram .node').forEach(node => {
+  const firstPath = node.querySelector('path[d]');
+  if (!firstPath) return;
+  const d = firstPath.getAttribute('d');
+  const nums = d.match(/-?[\d.]+/g)?.map(Number);
+  if (!nums || nums.length < 8) return;
+  const xs = [nums[0], nums[2], nums[4], nums[6]];
+  const ys = [nums[1], nums[3], nums[5], nums[7]];
+  const x = Math.min(...xs), y = Math.min(...ys);
+  const w = Math.max(...xs) - x, h = Math.max(...ys) - y;
+  const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  rect.setAttribute('x', x); rect.setAttribute('y', y);
+  rect.setAttribute('width', w); rect.setAttribute('height', h);
+  rect.setAttribute('rx', '8');
+  for (const a of ['fill', 'stroke', 'stroke-width', 'class', 'style']) {
+    if (firstPath.hasAttribute(a)) rect.setAttribute(a, firstPath.getAttribute(a));
+  }
+  firstPath.replaceWith(rect);
+});
+document.querySelectorAll('#erd svg.erDiagram .row-rect-odd path, #erd svg.erDiagram .row-rect-even path').forEach(p => {
+  p.setAttribute('stroke', 'none');
+});
+</script>
