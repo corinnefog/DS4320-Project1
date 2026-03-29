@@ -25,7 +25,7 @@ License
 
 **Motivation** - The NFL is the most watched sports league in the United States, generating billions of dollars in revenue and attracting enormous interest from fans, media, and the rapidly growing sports betting industry. Despite this interest, there is surprisingly little transparent, data-driven public analysis of what actually drives game outcomes beyond general team quality. Understanding which factors — rest advantages, weather, home field, divisional familiarity — meaningfully influence margins of victory has practical value for analysts, coaches, and bettors, and contributes to the broader scientific understanding of performance in professional sports. This project uses publicly available, well-documented data to bring analytical rigor to a question that millions of people engage with every week during the NFL season.
 
-[Jump to Press Release](#press-release)
+[Jump to Press Release](/Press-Release.md)
 
 ## Domain Exposition
 
