@@ -27,6 +27,23 @@ License
 
 [Jump to Press Release](/Press-Release.md)
 
+**Terminology** -
+| Term | Definition |
+|------|------------|
+| **ATS (Against the Spread)** | Whether a team won by more than the Vegas point spread; a tougher benchmark than straight win/loss |
+| **Point Spread** | The predicted margin of victory set by oddsmakers; used to handicap the favorite |
+| **Moneyline** | A bet on which team wins outright, with odds reflecting implied probability |
+| **Home Field Advantage** | The empirical tendency for home teams to win more often, attributed to crowd noise, travel fatigue, and familiarity |
+| **Rest Differential** | Difference in days of rest between the two teams before the game |
+| **DVOA (Defense-adjusted Value Over Average)** | An advanced NFL efficiency metric that adjusts team performance for opponent strength |
+| **EPA (Expected Points Added)** | Measures how much a play increases or decreases a team's expected scoring; a key advanced stat |
+| **Turnover Differential** | Difference between turnovers gained and lost; strongly correlated with game outcomes |
+| **SRS (Simple Rating System)** | A team quality metric combining average margin of victory and strength of schedule |
+| **Binary Classification** | A ML task where the model predicts one of two outcomes — here, home team win vs. loss |
+| **Features / Predictors** | Input variables used by the model (e.g., rest days, recent form, spread) |
+| **Implied Probability** | The win probability embedded in Vegas odds; a strong pre-game baseline to beat |
+
+
 ## Domain Exposition
 
 **Domain** - This project lives at the intersection of sports analytics and predictive modeling. Sports analytics is a rapidly growing field that applies statistical and machine learning methods to professional sports data in order to understand performance, inform strategy, and evaluate outcomes. Within sports analytics, NFL game prediction is a well-studied problem that draws on concepts from economics (betting markets and information efficiency), statistics (regression modeling and feature selection), and sports science (fatigue, home field effects, and weather impacts on performance). The NFL presents a particularly interesting domain because the betting market — represented by the Vegas spread line — provides a powerful baseline prediction that aggregates enormous amounts of expert knowledge. Any data-driven model must contend with this baseline, making the domain as much about understanding market efficiency as it is about predicting scores.
