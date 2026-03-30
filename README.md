@@ -65,6 +65,10 @@ License: [MIT](/LICENSE.md)
 
 **Code** - 
 
+| File | Description | Link |
+|-------|-------------|------|
+| Table-Maker.py | A single python file loading a larger CSV of NFL data, storing it using DuckDB into four distinct tables of a manageable size for pipeline usage.| [.py file](/P1-table-maker.py)|
+
 **Bias Identification** -
 1. Survivorship bias — only teams/franchises that existed across the full period are fully represented; expansion teams or relocated franchises have fewer records
 2. Recency bias — rule changes (e.g., pass interference rules, overtime rules) make older seasons less comparable to recent ones
