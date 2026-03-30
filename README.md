@@ -110,7 +110,7 @@ preserves full provenance of the raw data.
 
 ## Metadata
 
-<img src="/ER-Diagram.png" alt="Description of image">
+<img src="/images/ER-Diagram.png" alt="ER Diagram">
 
 **Data Dictionary** -
 | Name | Data Type | Description | Example |
