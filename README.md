@@ -116,10 +116,10 @@ preserves full provenance of the raw data.
 **Data**
 | Table Name | Description | Link to File |
 |------------|-------------|--------------|
-| Stadiums  | One row per stadium,  |[Data]('https://myuva-my.sharepoint.com/:x:/r/personal/qfr4cu_virginia_edu/_layouts/15/Doc.aspx?sourcedoc=%7BB192DC75-E734-4DC1-BCEE-082A1785F860%7D&file=stadiums.csv&action=default&mobileredirect=true')  |
-| Teams | One row per team,  |[Data]('https://myuva-my.sharepoint.com/:x:/r/personal/qfr4cu_virginia_edu/_layouts/15/Doc.aspx?sourcedoc=%7BD0844C54-C335-4B85-8C56-4A0D1B8A9AD0%7D&file=teams.csv&action=default&mobileredirect=true') |
-| Games| One row per game,  |[Data]('https://myuva-my.sharepoint.com/:x:/r/personal/qfr4cu_virginia_edu/_layouts/15/Doc.aspx?sourcedoc=%7B9BF91CE5-4137-4015-A4ED-41AA986FE346%7D&file=games.csv&action=default&mobileredirect=true') | 
-| Quarterbacks| One row per quarterback appearance per game| [Data]('https://myuva-my.sharepoint.com/:x:/r/personal/qfr4cu_virginia_edu/_layouts/15/Doc.aspx?sourcedoc=%7BD0DEC1F5-08CD-4298-B201-61B4BB323284%7D&file=quarterbacks.csv&action=default&mobileredirect=true') | 
+| Stadiums  | One row per stadium,  |[Data](https://myuva-my.sharepoint.com/:x:/r/personal/qfr4cu_virginia_edu/_layouts/15/Doc.aspx?sourcedoc=%7BB192DC75-E734-4DC1-BCEE-082A1785F860%7D&file=stadiums.csv&action=default&mobileredirect=true)  |
+| Teams | One row per team,  |[Data](https://myuva-my.sharepoint.com/:x:/r/personal/qfr4cu_virginia_edu/_layouts/15/Doc.aspx?sourcedoc=%7BD0844C54-C335-4B85-8C56-4A0D1B8A9AD0%7D&file=teams.csv&action=default&mobileredirect=true) |
+| Games| One row per game,  |[Data](https://myuva-my.sharepoint.com/:x:/r/personal/qfr4cu_virginia_edu/_layouts/15/Doc.aspx?sourcedoc=%7B9BF91CE5-4137-4015-A4ED-41AA986FE346%7D&file=games.csv&action=default&mobileredirect=true) | 
+| Quarterbacks| One row per quarterback appearance per game| [Data](https://myuva-my.sharepoint.com/:x:/r/personal/qfr4cu_virginia_edu/_layouts/15/Doc.aspx?sourcedoc=%7BD0DEC1F5-08CD-4298-B201-61B4BB323284%7D&file=quarterbacks.csv&action=default&mobileredirect=true) | 
 
 **Data Dictionary** -
 | Name | Data Type | Description | Example |
