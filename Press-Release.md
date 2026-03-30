@@ -17,3 +17,5 @@ Vegas already knows. The result is a clear, interpretable ranking of which facto
 differences to wind speed and divisional rivalry effects.
 
 ## Chart
+
+<img src="/images/press-release.png" alt="lin reg chart">
