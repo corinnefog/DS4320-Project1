@@ -10,9 +10,9 @@ DOI:
 
 Data: [Data](https://myuva-my.sharepoint.com/:f:/g/personal/qfr4cu_virginia_edu/IgCsxlm2yylQQKvGMnDODUY8AUfh3B7grQfh3l9pqinbWXI?e=gDn7aj)
 
-Pipeline: [Notebook]('/Pipeline/pipeline.ipynb')
+Pipeline: [Notebook](/Pipeline/pipeline.ipynb)
 
-License: 
+License: [MIT](/LICENSE.md)
 
 
 ## Problem Definition
