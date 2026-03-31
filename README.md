@@ -1,5 +1,7 @@
 # DS4320-Project1 - NFL Point Spread Model
 
+**Executive Summary** - This project conatins materials for a data science project analyzing which factors drive NFL outcomes. Using regular season gamd data from 2014-2024 NFL seasons, aquired from the nflverse project, this analysis compares a linear regression and random forest in predicting margin of victory. The project finds that the vegas-spread lines most available signal, with factors like weather and rest advantage contributing minimally. All data, code, metadata, and results are organized in this repository and linked below.
+
 Name: Corinne Fogarty
 
 NetID: qfr4cu
