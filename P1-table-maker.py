@@ -1,7 +1,7 @@
 import pandas as pd
 import logging
 
-# ── Logging setup ─────────────────────────────────────────────────────────────
+# Logging setup 
 logging.basicConfig(
     filename='data_creation.log',
     level=logging.INFO,
@@ -9,13 +9,13 @@ logging.basicConfig(
 )
 
 try:
-    # ── Load raw data ──────────────────────────────────────────────────────────
+    #  Load raw data 
     logging.info("Loading raw nflverse games CSV")
     df = pd.read_csv("http://www.habitatring.com/games.csv")
     df = df[(df['season'] >= 2014) & (df['season'] <= 2024) & (df['game_type'] == 'REG')]
     logging.info(f"Raw data loaded: {df.shape}")
 
-    # ── Table 1: games ─────────────────────────────────────────────────────────
+    #  Table 1: games 
     # Core fact table — one row per game, foreign keys to other tables
     games = df[[
         'game_id', 'season', 'game_type', 'week', 'gameday',
@@ -28,7 +28,7 @@ try:
     games.to_csv("games.csv", index=False)
     logging.info(f"games.csv saved: {games.shape}")
 
-    # ── Table 2: teams ─────────────────────────────────────────────────────────
+    # Table 2: teams 
     # One row per unique team — derived from all home/away appearances
     away_teams = df[['away_team']].rename(columns={'away_team': 'team_id'})
     home_teams = df[['home_team']].rename(columns={'home_team': 'team_id'})
@@ -58,7 +58,7 @@ try:
     teams.to_csv("teams.csv", index=False)
     logging.info(f"teams.csv saved: {teams.shape}")
 
-    # ── Table 3: stadiums ──────────────────────────────────────────────────────
+    #  Table 3: stadiums 
     # One row per unique stadium with surface and roof info
     stadiums = df[['stadium', 'roof', 'surface', 'temp', 'wind', 'home_team']].copy()
     stadiums = stadiums.groupby('stadium').agg(
@@ -71,7 +71,7 @@ try:
     stadiums.to_csv("stadiums.csv", index=False)
     logging.info(f"stadiums.csv saved: {stadiums.shape}")
 
-    # ── Table 4: quarterbacks ──────────────────────────────────────────────────
+    # Table 4: quarterbacks
     # One row per QB appearance per game (away and home combined)
     away_qbs = df[['game_id', 'away_qb_id', 'away_qb_name', 'away_team']].copy()
     away_qbs.columns = ['game_id', 'qb_id', 'qb_name', 'team_id']
