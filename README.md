@@ -50,7 +50,7 @@ License: [MIT](/LICENSE.md)
 
 **Domain** - This project lives at the intersection of sports analytics and predictive modeling. Sports analytics is a rapidly growing field that applies statistical and machine learning methods to professional sports data in order to understand performance, inform strategy, and evaluate outcomes. Within sports analytics, NFL game prediction is a well-studied problem that draws on concepts from economics (betting markets and information efficiency), statistics (regression modeling and feature selection), and sports science (fatigue, home field effects, and weather impacts on performance). The NFL presents a particularly interesting domain because the betting market — represented by the Vegas spread line — provides a powerful baseline prediction that aggregates enormous amounts of expert knowledge. Any data-driven model must contend with this baseline, making the domain as much about understanding market efficiency as it is about predicting scores.
 
-[Readings Folder](https://myuva-my.sharepoint.com/my?id=%2Fpersonal%2Fqfr4cu%5Fvirginia%5Fedu%2FDocuments%2FDS4320%2DProject1%2Dqfr4cu%2FReadings&viewid=cf47b42d%2D2750%2D4e37%2D954f%2Df43c8dad27aa)
+[Readings Folder](https://myuva-my.sharepoint.com/:f:/g/personal/qfr4cu_virginia_edu/IgDhQUm40S0nTJc4o1j_g6sDASWeX5eqLT4864IQUiC_p5M?e=RLsdAE)
 
 | Title | Description | Link |
 |-------|-------------|------|
