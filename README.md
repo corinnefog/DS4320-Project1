@@ -6,7 +6,7 @@ Name: Corinne Fogarty
 
 NetID: qfr4cu
 
-DOI:
+DOI: 10.5281/zenodo.19355653
 
 [Press Release](/Press-Release.md)
 
